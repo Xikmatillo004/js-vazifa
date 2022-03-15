@@ -1,18 +1,29 @@
-let elName = document.querySelector('#name');
-let elname = document.querySelector('#surname');
-let father = document.querySelector('#fathers__name');
-let userage = document.querySelector('#age');
-var username;
-var surname;
-var fathername;
-var age;
-function changer(){
-    username =prompt('ismingiz')
-    surname =prompt('familyangiz')
-    fathername =prompt('Otangizning ismi')
-    age =prompt('yoshingiz')
-elName.textContent= elName.textContent.replace('#span', username);
-elname.textContent= elname.textContent.replace('  ', surname);
-father.textContent= father.textContent.replace('   ', fathername);
-userage.textContent= userage.textContent.replace('a', yoshingiz);
+
+let userName = document.getElementById('name');
+let userSurname = document.getElementById('surname');
+let fathers__name = document.getElementById('fathers__name');
+let userAge = document.getElementById('age');
+function changer() {
+    userName.textContent='';
+    userSurname.textContent='';
+    fathers__name.textContent='';
+    userAge.textContent='';
+    let userNameInput = prompt('Ismingizni kirirting: ');
+    let userSurnameInput = prompt('Familyangizni kiriting');
+    let fathernameInput = prompt('Sharifingizni kiriting');
+    let userAgeInput=prompt('yoshingizni kiriting');
+    userName.textContent = userName.textContent.replace('', userNameInput);
+    userSurname.textContent =userSurname.textContent.replace('', userSurnameInput);
+    fathers__name.textContent =fathers__name.textContent.replace('', fathernameInput);
+    userAge.textContent=userAge.textContent.replace('', userAgeInput);
+}
+function changer1() {
+    userName.textContent='';
+    userSurname.textContent='';
+    fathers__name.textContent='';
+    userAge.textContent='';
+    userName.textContent = userName.textContent.replace('', '');
+    userSurname.textContent =userSurname.textContent.replace('', '');
+    fathers__name.textContent =fathers__name.textContent.replace('', '');
+    userAge.textContent=userAge.textContent.replace('', '');
 }
