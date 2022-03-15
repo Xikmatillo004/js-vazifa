@@ -1,0 +1,19 @@
+body{
+    font-family: sans-serif;
+}
+.container{
+    width: 700px;
+    margin: 200px auto 0;
+}
+.main__box{
+    padding: 30px;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+.small__box{
+    display: flex;
+    justify-content: space-between;
+}
+.qaytar{
+    padding:  10px 22px;
+}
